@@ -26,4 +26,8 @@ sequenceDiagram
     transport->>endpoint: entitlementsvc.MakeGetEntitlementEndpoint()
     endpoint-->>middleware: entitlementsvc.GetEntitlement()
     middleware-->>service: entitlementsvc.GetEntitlement()
+
+    service->>middleware: JSON response
+    middleware->>endpoint:
+    endpoint->>transport:
 ```
