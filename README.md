@@ -28,6 +28,6 @@ sequenceDiagram
     middleware-->>service: entitlementsvc.GetEntitlement()
 
     service-->>middleware: JSON response
-    middleware-->>endpoint:
-    endpoint-->>transport:
+    middleware-->>endpoint: JSON response
+    endpoint-->>transport: JSON response
 ```
