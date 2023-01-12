@@ -34,6 +34,7 @@ sequenceDiagram
     activate service
     middleware-->>service: entitlementsvc.GetEntitlement()
     Note over middleware,service: Service can fetch data from backend system
+    Note right of service: Service has business logic + JSON payload mapping
 
     service-->>middleware: JSON response
     deactivate service
