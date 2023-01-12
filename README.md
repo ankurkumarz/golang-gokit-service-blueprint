@@ -34,9 +34,9 @@ sequenceDiagram
     deactivate service
 
     service-->>middleware: JSON response
-    deactivate middleware
-
     middleware-->>endpoint: JSON response
+    deactivate middleware
+    
     endpoint-->>transport: JSON response
     deactivate endpoint
 ```
