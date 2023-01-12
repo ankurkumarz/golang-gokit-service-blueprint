@@ -25,10 +25,17 @@ go run cmd/main.go
 sequenceDiagram
     transport-->>endpoint: entitlementsvc.MakeGetEntitlementEndpoint()
     activate endpoint
+
+    activate middleware
     endpoint-->>middleware: entitlementsvc.GetEntitlement()
+
+    activate service
     middleware-->>service: entitlementsvc.GetEntitlement()
+    deactivate service
 
     service-->>middleware: JSON response
+    deactivate middleware
+
     middleware-->>endpoint: JSON response
     endpoint-->>transport: JSON response
     deactivate endpoint
