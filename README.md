@@ -24,10 +24,12 @@ go run cmd/main.go
 ```mermaid
 sequenceDiagram
     transport-->>endpoint: entitlementsvc.MakeGetEntitlementEndpoint()
+    activate endpoint
     endpoint-->>middleware: entitlementsvc.GetEntitlement()
     middleware-->>service: entitlementsvc.GetEntitlement()
 
     service-->>middleware: JSON response
     middleware-->>endpoint: JSON response
     endpoint-->>transport: JSON response
+    deactivate endpoint
 ```
