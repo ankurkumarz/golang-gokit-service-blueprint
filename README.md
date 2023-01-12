@@ -28,12 +28,13 @@ sequenceDiagram
 
     activate middleware
     endpoint-->>middleware: entitlementsvc.GetEntitlement()
+    Note over endpoint-->>middleware: Handling logging and intermediate processing
 
     activate service
     middleware-->>service: entitlementsvc.GetEntitlement()
     service-->>middleware: JSON response
     deactivate service
-    
+
     middleware-->>endpoint: JSON response
     deactivate middleware
 
