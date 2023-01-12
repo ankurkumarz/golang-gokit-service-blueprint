@@ -23,6 +23,7 @@ go run cmd/main.go
 ## Sequence Diagram
 ```mermaid
 sequenceDiagram
+    autonumber
     transport-->>endpoint: entitlementsvc.MakeGetEntitlementEndpoint()
     activate endpoint
 
