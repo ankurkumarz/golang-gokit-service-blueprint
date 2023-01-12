@@ -9,3 +9,21 @@
 - [Go Kit](https://gokit.io/) being used a toolkit to avoid reinventing the wheel when it comes to 
 RPC safety, system observability, infrastructure integration, and overall program design.
 - Initial implementation is using REST as an interface (future support for gRPC)
+
+## To RUN
+- Run the application:
+```
+go run cmd/main.go
+```
+- Check the endpoint:
+```
+ curl http://localhost:8080/entitlement/01
+```
+
+## Sequence Diagram
+```mermaid
+sequenceDiagram
+    transport->>endpoint: entitlementsvc.MakeGetEntitlementEndpoint()
+    endpoint-->>middleware: entitlementsvc.GetEntitlement()
+    middleware-->>service: entitlementsvc.GetEntitlement()
+```
