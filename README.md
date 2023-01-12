@@ -31,12 +31,12 @@ sequenceDiagram
 
     activate service
     middleware-->>service: entitlementsvc.GetEntitlement()
-    deactivate service
-
     service-->>middleware: JSON response
+    deactivate service
+    
     middleware-->>endpoint: JSON response
     deactivate middleware
-    
+
     endpoint-->>transport: JSON response
     deactivate endpoint
 ```
