@@ -1,7 +1,8 @@
 repo_name: ankurkumarz/golang-gokit-service-blueprint
 report_id: 402d7edf8a51aaa102e98c91d34e61d9
+version: 0.1
 repo_type: Public
-timestamp: '2023-12-14T15:17:32+00:00'
+timestamp: '2024-01-05T08:24:49+00:00'
 requested_by: ankurkumarz
 provider: github
 branch: main
@@ -17,6 +18,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1005/O6AczwfV_400x400.png
+  detection_source_url: https://github.com/ankurkumarz/golang-gokit-service-blueprint
   detection_source: Repo Metadata
 - name: Git
   description: Fast, scalable, distributed revision control system
@@ -26,6 +28,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/ankurkumarz/golang-gokit-service-blueprint
   detection_source: Repo Metadata
 - name: kit
   description: A standard library for microservices
