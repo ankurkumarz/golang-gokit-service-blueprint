@@ -1,0 +1,75 @@
+repo_name: ankurkumarz/golang-gokit-service-blueprint
+report_id: 402d7edf8a51aaa102e98c91d34e61d9
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-29T19:01:00+00:00'
+requested_by: ankurkumarz
+provider: github
+branch: main
+detected_tools_count: 5
+tools:
+- name: Golang
+  description: An open source programming language that makes it easy to build simple,
+    reliable, and efficient software
+  website_url: http://golang.org/
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1005/O6AczwfV_400x400.png
+  detection_source_url: https://github.com/ankurkumarz/golang-gokit-service-blueprint
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/ankurkumarz/golang-gokit-service-blueprint
+  detection_source: Repo Metadata
+- name: kit
+  description: A standard library for microservices
+  package_url: https://pkg.go.dev/github.com/go-kit/kit
+  version: 0.8.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/ankurkumarz/golang-gokit-service-blueprint/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Ankur Kumar
+  last_updated_on: 2023-01-12 02:14:19.000000000 Z
+- name: logfmt
+  description: Package logfmt marshals and unmarshals logfmt messages
+  package_url: https://pkg.go.dev/github.com/go-logfmt/logfmt
+  version: 0.3.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/ankurkumarz/golang-gokit-service-blueprint/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Ankur Kumar
+  last_updated_on: 2023-01-12 02:14:19.000000000 Z
+- name: mux
+  description: "A powerful HTTP router and URL matcher for building Go web servers
+    with \U0001F98D"
+  package_url: https://pkg.go.dev/github.com/gorilla/mux
+  version: 1.6.2
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/ankurkumarz/golang-gokit-service-blueprint/blob/main/go.sum
+  detection_source: go.mod
+  last_updated_by: Ankur Kumar
+  last_updated_on: 2023-01-12 02:14:19.000000000 Z
